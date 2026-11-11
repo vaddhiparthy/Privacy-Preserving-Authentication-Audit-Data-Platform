@@ -94,6 +94,10 @@
       .section { padding:24px; margin-top:18px; }
       .card { padding:18px; }
       .metric { font-size:2.2rem; font-weight:800; color:var(--accent); letter-spacing:-.04em; }
+      .hero-card .grid-3 { gap:10px; }
+      .hero-card .card { padding:12px; }
+      .hero-card .metric { font-size:clamp(1.25rem, 2.05vw, 2rem); line-height:1.05; white-space:nowrap; }
+      .hero-card .metric + .muted { font-size:clamp(.62rem, .78vw, .74rem); line-height:1.3; overflow-wrap:anywhere; }
       .flow { display:grid; grid-template-columns:repeat(6,minmax(120px,1fr)); gap:10px; margin-top:16px; overflow:auto; }
       .flow-card {
         min-height:142px;
@@ -429,7 +433,7 @@
 
       <section class="section" id="tables">
         <h2>Data Tables</h2>
-        <p class="lead">The browser shows compact 10-row previews only. The full RBA source archive is identified in Source Registry, is not committed to the repository, and is not hosted inside this page.</p>
+        <p class="lead">The browser shows compact 10-row previews only. The full 1.1 GB RBA source dataset is linked in Source Registry and is not hosted inside this page.</p>
         <div class="toolbar">
           <label for="table-group-select"><strong>Data stage</strong></label>
           <select id="table-group-select"></select>
@@ -465,7 +469,7 @@
         <h2>Operations</h2>
         <p class="lead">How work is triggered, what the last audited run did, how each failure
           class is handled, and what the measured numbers imply about scale and cost.
-          The full-volume run is a point-in-time benchmark against a local source archive,
+          The full-volume run is a point-in-time benchmark against the 1.1 GB source archive,
           which is not committed; correctness is verified continuously by the suite instead.</p>
         <div class="run-strip" id="run-strip"></div>
         <div class="grid-2">
@@ -514,7 +518,7 @@ curl -s /privacy-preserving-authentication-audit-data-platform/healthz</pre>
       </section>
 
       <footer>
-        Built by <span data-public-display-name>Vaddhiparthy</span>. Public technical surface for a local-first authentication audit platform.
+        Built by <span data-public-display-name>Surya Vaddhiparthy</span>. Public technical surface for a local-first authentication audit platform.
       </footer>
     </main>
 
