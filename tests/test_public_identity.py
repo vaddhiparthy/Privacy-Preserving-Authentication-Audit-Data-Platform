@@ -12,5 +12,6 @@ class PublicIdentitySurfaceTests(TestCase):
         self.assertIn("data-public-display-name", demo)
         self.assertIn("replacePublicRoots", demo)
         self.assertIn('document.querySelectorAll("a[href]")', demo)
-        self.assertNotIn("Surya Vaddhiparthy", demo)
+        # Keep the correct owner visible while the central identity fetch loads or fails.
+        self.assertIn("data-public-display-name>Surya Vaddhiparthy</span>", demo)
         self.assertNotIn('href="https://github.com/', demo)

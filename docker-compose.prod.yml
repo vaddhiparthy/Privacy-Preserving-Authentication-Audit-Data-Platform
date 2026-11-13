@@ -1,7 +1,7 @@
 name: professional
 services:
   authaudit:
-    image: sha256:8b889ebba6c0a2b6c529b1fc29006d7fe7c9d32ffa39fa3e8badf7ace9e9849a
+    image: sha256:b49ce16b5d027b21d7eae74de960fe35907b8248187b370205f88b2cf02de0a7
     pull_policy: never
     container_name: professional-authaudit
     user: 10001:10001
